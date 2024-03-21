@@ -60,7 +60,7 @@
     const yearsLived = inventors.sort( (a,b) =>{
       let lastGuy = a.passed - a.year;
       let nextGuy = b.passed - b.year;
-      return (lastGuy > nextGuy ? 1 : -1)
+      return lastGuy -nextGuy
     })
     console.table(yearsLived)
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
